@@ -9,7 +9,10 @@ class Dashboard extends CI_Controller
 	{
 		# code...
 		parent::__construct();
+		
 		# Within the constructor, load a model:
 		$this->load->model('user');
+
+		# Using this model to check if the user is loggedIn:
 	}
 }
