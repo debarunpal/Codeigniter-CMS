@@ -1,7 +1,7 @@
 <?php
 defined('BASEPATH') OR exit('No direct script access allowed');
 
-/*function __autoload($classname) {
+function __autoload($classname) {
 	# We only need to run this if a class name does not start with CI
 	if (strpos($classname, 'CI_') !== 0) {
 		$file = APPPATH . 'libraries/' . $classname . '.php';
@@ -9,7 +9,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 			@include_once($file);
 		}
 	}
-}*/
+}
 
 /*
 |--------------------------------------------------------------------------
