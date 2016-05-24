@@ -2,17 +2,19 @@
 /**
 * 
 */
-class Dashboard extends CI_Controller
+class Dashboard extends Admin_Controller
 {
 	
 	public function __construct()
 	{
-		# code...
 		parent::__construct();
-		
-		# Within the constructor, load a model:
-		$this->load->model('user');
+	}
 
-		# Using this model to check if the user is loggedIn:
+	public function index() {
+		$this->load->view('admin/_layout_main', $this->data);
+	}
+
+	public function modal() {
+		$this->load->view('admin/_layout_modal', $this->data);
 	}
 }
